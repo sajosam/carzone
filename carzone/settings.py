@@ -180,4 +180,4 @@ EMAIL_HOST_USER = 'anjubinu866@gmail.com'
 EMAIL_HOST_PASSWORD = 'Sajo@000'
 EMAIL_USE_TLS = True
 
-STATICFILES_STORAGE='wwhitenoise.storage.CompressedManifiestStaticFilesStorage'
+STATICFILES_STORAGE='whitenoise.storage.CompressedManifiestStaticFilesStorage'
