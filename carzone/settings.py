@@ -151,7 +151,11 @@ STATICFILES_DIRS = [
     BASE_DIR / "carzone/static",
 ]
 
-
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'carzone/static'),
+# ]
 
 # MEDIA_ROOT = BASE_DIR /'media/'
 # MEDIA_URL='/media/'
@@ -180,4 +184,7 @@ EMAIL_HOST_USER = 'anjubinu866@gmail.com'
 EMAIL_HOST_PASSWORD = 'Sajo@000'
 EMAIL_USE_TLS = True
 
-STATICFILES_STORAGE='whitenoise.storage.CompressedManifiestStaticFilesStorage'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# STATICFILES_STORAGE='whitenoise.storage.CompressedManifiestStaticFilesStorage'
