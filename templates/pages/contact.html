@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 
+
+{% block title %}
+| Contact
+{% endblock title %}
+
+
 {% load static %}
 
 
@@ -26,7 +32,9 @@
             <h1>Contact <span>Us</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         </div>
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="{% url 'contact' %}" method="POST" enctype="multipart/form-data">
+            {% include 'includes/messages.html' %}
+            {% csrf_token %}
             <div class="row">
                 <div class="col-lg-7">
                     <div class="row">
